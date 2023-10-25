@@ -13,7 +13,14 @@ public class BaseballGameModel {
     private List<Integer> computerNums = new ArrayList<>(); //컴퓨터 랜덤 넘버 생성
 
     public BaseballGameModel(){
+        if (!computerNums.isEmpty()){
+            cleanNums();
+        }
         generateRandomNums();
+    }
+
+    private void cleanNums() {
+        computerNums.clear();
     }
 
     /**
