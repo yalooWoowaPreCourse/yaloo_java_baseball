@@ -50,6 +50,7 @@ public class BaseballGameView {
 
     public void generateUserGuessNums(){
         String inputNums = Console.readLine();
+        System.out.println(inputNums);
 
         checkValidLength(inputNums);
         checkValidDuplicated(inputNums);
